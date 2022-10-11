@@ -1,0 +1,28 @@
+<?php
+
+$peso = 140;
+$altura = 1.78;
+
+$imc = $peso/($altura*2);
+echo "Considerando que seu peso é igual a: $peso";
+print("\n");
+echo "Considerando que sua altura é igual a: $altura";
+print("\n");
+if ($imc <= 18.5) {
+ echo "Abaixo do peso normal, seu IMC é: ", $imc;
+ 
+} else if ($imc>= 18.5 && $imc<= 24.9) {
+    echo "Peso normal, seu IMC é: ", $imc;
+    
+} else if ($imc>= 25.0 && $imc<= 29.9) {
+    echo "Excesso de Peso, seu IMC é: ", $imc;
+    
+} else if ($imc>= 30.0 && $imc<= 34.9) {
+    echo "Obesidade Classe I, seu IMC é: ", $imc;
+    
+} else if ($imc>= 35.0 && $imc<= 39.9) {
+    echo "Obesidade Classe II, seu IMC é: ", $imc;
+}    
+else  {
+    echo "Obesidade Classe III, seu IMC é: ", $imc;
+}
